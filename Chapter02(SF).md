@@ -23,7 +23,7 @@
 ***Xác suất của một biến cố***
 > Cho một không gian mẫu rời rạc, xác suất của một biến cố E - P(E), bằng tổng xác suất của các kết quả của E.
 
-VD: Một thí nghiệm ngẫu nhiên có kết quả trong một trong các đầu ra {a, b, c, d} với xác suất 0.1, 0.3, 0.5, 0.1 tương ứng. ${A={a,b}, B=\{b,c,d\}, C=\{d\}}$
+VD: Một thí nghiệm ngẫu nhiên có kết quả trong một trong các đầu ra {a, b, c, d} với xác suất 0.1, 0.3, 0.5, 0.1 tương ứng. ${A=\\{a,b\\}, B=\{b,c,d\}, C=\{d\}}$
     ${P(A)=0.1+0.3=0.4}$
     ${P(B)=0.3+0.5+0.1=0.9}$
     ${P(C)=0.1}$
@@ -41,7 +41,7 @@ VD: Một thí nghiệm ngẫu nhiên có kết quả trong một trong các đ�
 > (2) ${0\le P(E)\le 1}$
 
 > (3) Nếu ${A_1, A_2,...}$ là các biến cố rời rạc, ${A_i\cap A_j=\emptyset}$ với ${i\neq j}$ thì:
-    > ${P(\bigcup_{i=1}^\infty A_i\right) = \sum_{i=1}^\infty P(A_i)}$
+    > ${P\left(\bigcup_{i=1}^\infty A_i\right) = \sum_{i=1}^\infty P(A_i)}$
 
 2.4 Condition Probability
 - ${P(B|A) = P(A\cap B) / P(A)}$
