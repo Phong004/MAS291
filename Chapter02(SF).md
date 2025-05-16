@@ -40,15 +40,15 @@ VD: Một thí nghiệm ngẫu nhiên có kết quả trong một trong các đ�
     ${P(A\cap B)=0.3}$
 
     ${P(A\cup B)=0.4+0.9-0.3=1}$
-    
+
     ${P(A\cup C)=0.1+0.3+0.1=0.5}$
 
 ***Tiên đề của xác suất***
 
 > (1) ${P(S)=1}$
-
+>
 > (2) ${0\le P(E)\le 1}$
-
+>
 > (3) Nếu ${A_1, A_2,...}$ là các biến cố rời rạc, ${A_i\cap A_j=\emptyset}$ với ${i\neq j}$ thì: ${P\left(\bigcup_{i=1}^\infty A_i\right) = \sum_{i=1}^\infty P(A_i)}$
 
 2.4 Condition Probability
