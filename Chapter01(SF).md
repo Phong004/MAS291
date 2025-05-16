@@ -70,11 +70,11 @@ VD: Cho tập ${S=\{a, b, c\}}$. Số các hoán vị của tập S là: ${3!=6}
 
 - Số các hoán vị của n phần tử mà trong đó ${n=n_1+n_2+...+n_r}$ đối tượng với ${n_1, n_2, n_3,...}$ là từng loại có số phần tử tương ứng.
 
-> ${\frac{n!}{n_1!\times\n_2!\times\n_3!\times...\times n_r!}}$
+> ${\frac{n!}{n_1!\times n_2!\times n_3!\times...\times n_r!}}$
 
-VD: Một bệnh viện cần phẫu thuật 3 ca đầu gối (k) và 2 ca bả vai (h) một ngày. Số các trường hợp có thể xảy ra thỏa điều kiện: ${\frac{5!}{2!\times\3!}=10}$
+VD: Một bệnh viện cần phẫu thuật 3 ca đầu gối (k) và 2 ca bả vai (h) một ngày. Số các trường hợp có thể xảy ra thỏa điều kiện: ${\frac{5!}{2!\times 3!}=10}$
 
-### Hoán vị ${P^{k}_n} và tổ hợp ${C^{k}_n}$
+### Hoán vị ${P^k_n}$ và tổ hợp ${C^k_n}$
 
 - Hoán vị là cách **sắp xếp** các đối tượng có tính đến vị trí (**có thứ tự**)
 - Tổ hợp là cách **chọn** các đối tượng không quan tâm đến thứ tự (**không có thứ tự**)
@@ -83,4 +83,23 @@ VD: Một bệnh viện cần phẫu thuật 3 ca đầu gối (k) và 2 ca bả
   <img src="Pictures/Counting_Technique.png" alt="Counting Techniques" style="max-width: 80%; max-height: 500px; height: auto;">
 </div>
 
+VD:
 
+1. Một bo mạch có 8 vị trí khác nhau có thể đặt các linh kiện. Nếu 4 linh kiện khác nhau được đặt lên bo, có bao nhiêu cách có thể để thiết kê bo mạch?
+
+    Có 4 linh kiện khác nhau, **thứ tự** giữa các linh kiện là *quan trọng*, mỗi linh kiện chỉ được lấy **đúng 1 lần**:
+    >${P^4_8=\frac{8!}{4!}=1680}$
+
+2. Một bo mạch có 8 vị trí khác nhau có thể đặt các linh kiện. Nếu 5 linh kiện giống hệt nhau được đặt lên bo, có bao nhiêu cách thiết kế bo mạch?
+
+    Có 5 linh kiện giống nhau, **thứ tự** giữa các linh kiện *không quan trọng*, mỗi linh kiện chỉ lấy **đúng 1 lần**:
+    >${C^5_8=\frac{8!}{3!\times 5!}}$
+
+3. Một thùng chứa có 50 linh kiện, trong đó có 3 linh kiện bị lỗi, 47 linh kiện không bị lỗi. Một mẫu 6 linh kiện lấy từ 50 linh kiện và không hoàn lại. Ta có, mỗi phần có thể được chọn chỉ 1 lần, và mẫu kiểm là tập con của 50 linh kiện. Có bao nhiêu mẫu thử khác nhau có kích thước là 6 và có chính xác 2 linh kiện lỗi?
+
+    1. Chọn ra 2 linh kiện từ 3 linh kiện lỗi:
+    >${C^2_3=\frac{3!}{2!\times 1!}=3}$
+    2. Chọn ra 4 linh kiện từ 47 linh kiện không bị lỗi:
+    >${C^4_47=\frac{47!}{4!\times 43!}=178,365}$
+    3. Chọn mẫu thử có kích thước là 6:
+    >${C^2_3\times C^4_47=3\times 178,365=535,095}$ samples
