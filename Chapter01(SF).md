@@ -74,7 +74,7 @@ VD: Cho tập ${S=\{a, b, c\}}$. Số các hoán vị của tập S là: ${3!=6}
 
 VD: Một bệnh viện cần phẫu thuật 3 ca đầu gối (k) và 2 ca bả vai (h) một ngày. Số các trường hợp có thể xảy ra thỏa điều kiện: ${\frac{5!}{2!\times 3!}=10}$
 
-### Hoán vị ${P^k_n}$ và tổ hợp ${C^k_n}$
+### Hoán vị ${P^{k}_n} và tổ hợp ${C^{k}_n}$
 
 - Hoán vị là cách **sắp xếp** các đối tượng có tính đến vị trí (**có thứ tự**)
 - Tổ hợp là cách **chọn** các đối tượng không quan tâm đến thứ tự (**không có thứ tự**)
