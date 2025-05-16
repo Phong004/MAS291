@@ -70,11 +70,11 @@ VD: Cho tập ${S=\{a, b, c\}}$. Số các hoán vị của tập S là: ${3!=6}
 
 - Số các hoán vị của n phần tử mà trong đó ${n=n_1+n_2+...+n_r}$ đối tượng với ${n_1, n_2, n_3,...}$ là từng loại có số phần tử tương ứng.
 
-> ${\frac{n!}{n_1!\times\n_2!\times\n_3!\times...\times n_r!}}$
+> ${\frac{n!}{n_1!\times n_2!\times n_3!\times...\times n_r!}}$
 
-VD: Một bệnh viện cần phẫu thuật 3 ca đầu gối (k) và 2 ca bả vai (h) một ngày. Số các trường hợp có thể xảy ra thỏa điều kiện: ${\frac{5!}{2!\times\3!}=10}$
+VD: Một bệnh viện cần phẫu thuật 3 ca đầu gối (k) và 2 ca bả vai (h) một ngày. Số các trường hợp có thể xảy ra thỏa điều kiện: ${\frac{5!}{2!\times 3!}=10}$
 
-### Hoán vị ${P^{k}_n} và tổ hợp ${C^{k}_n}$
+### Hoán vị ${P_n^k}$ và tổ hợp ${C^k_n}$
 
 - Hoán vị là cách **sắp xếp** các đối tượng có tính đến vị trí (**có thứ tự**)
 - Tổ hợp là cách **chọn** các đối tượng không quan tâm đến thứ tự (**không có thứ tự**)
