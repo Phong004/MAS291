@@ -51,6 +51,13 @@ VD: Một thí nghiệm ngẫu nhiên có kết quả trong một trong các đ�
 >
 > (3) Nếu ${A_1, A_2,...}$ là các biến cố rời rạc, ${A_i\cap A_j=\emptyset}$ với ${i\neq j}$ thì: ${P\left(\bigcup_{i=1}^\infty A_i\right) = \sum_{i=1}^\infty P(A_i)}$
 
+## 3. Quy tắc cộng
+
+<div align="center">
+<img src="Pictures\ProbabilityUnion.png" alt="Probability Union Addition" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
+
+
 2.4 Condition Probability
 - ${P(B|A) = P(A\cap B) / P(A)}$
 - ${P(A\cap B) = P(B|A) \times P(A)}$
