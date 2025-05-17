@@ -128,3 +128,13 @@ VD: Một sọt chứa 12 banh hồng và 6 banh xanh. Không hoàn lại, 2 tr�
 <img src="Pictures\TotalProbabilityRule2.png" alt="Mutually Exclusive Events for all pairs" style="max-width: 80%; max-height: 500px; height: auto;">
 </div>
 
+VD: Giả sử xác suất sản xuất các linh kiện bán dẫn có độ thất bại được đo như sau:
+
+<div align="center">
+<img src="Pictures\Example2-5-1.png" alt="Mutually Exclusive Events for all pairs" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
+
+## 6. Sự độc lập
+
+**Một số các ví dụ về các biến cố độc lập:**
+- 
