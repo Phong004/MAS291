@@ -25,30 +25,20 @@
 
 VD: Một thí nghiệm ngẫu nhiên có kết quả trong một trong các đầu ra {a, b, c, d} với xác suất 0.1, 0.3, 0.5, 0.1 tương ứng. ${A=\\{a,b\\}, B=\\{b,c,d\\}, C=\\{d\\}}$
 
->${P(A)=0.1+0.3=0.4}$
->
->${P(B)=0.3+0.5+0.1=0.9}$
->
->${P(C)=0.1}$
->
->${P(A')=1-0.4=0.6}$
->
->${P(B')=1-0.9=0.1}$
->
->${P(C')=1-0.1=0.9}$
->
->${P(A\cap B)=0.3}$
->
->${P(A\cup B)=0.4+0.9-0.3=1}$
->
+>${P(A)=0.1+0.3=0.4}$  
+>${P(B)=0.3+0.5+0.1=0.9}$  
+>${P(C)=0.1}$  
+>${P(A')=1-0.4=0.6}$  
+>${P(B')=1-0.9=0.1}$  
+>${P(C')=1-0.1=0.9}$  
+>${P(A\cap B)=0.3}$  
+>${P(A\cup B)=0.4+0.9-0.3=1}$  
 >${P(A\cup C)=0.1+0.3+0.1=0.5}$
 
 ***Tiên đề của xác suất***
 
-> (1) ${P(S)=1}$
->
-> (2) ${0\le P(E)\le 1}$
->
+> (1) ${P(S)=1}$  
+> (2) ${0\le P(E)\le 1}$  
 > (3) Nếu ${A_1, A_2,...}$ là các biến cố rời rạc, ${A_i\cap A_j=\emptyset}$ với ${i\neq j}$ thì: ${P\left(\bigcup_{i=1}^\infty A_i\right) = \sum_{i=1}^\infty P(A_i)}$
 
 ## 3. Quy tắc cộng
@@ -57,8 +47,54 @@ VD: Một thí nghiệm ngẫu nhiên có kết quả trong một trong các đ�
 <img src="Pictures\ProbabilityUnion.png" alt="Probability Union Addition" style="max-width: 80%; max-height: 500px; height: auto;">
 </div>
 
+VD: Một lớp có 28 sinh viên, 12 học tiếng Nhật, 15 học tiếng Anh và 8 sinh viên học cả hai môn. Một sinh viên được chọn ngẫu nhiên, tính xác suất để chọn ra những sinh viên học tiếng Nhật hoặc tiếng Anh.
+
+- Gọi A là tập các sinh viên học tiếng Nhật có 12 phần tử.
+- Gọi B là tập các sinh viên học tiếng Anh có 15 phần tử.
+- Xác suất chọn ra sinh viên học tiếng Nhật hoặc tiếng Anh: ${P(A\cup B)=P(A)+P(B)-P(A\cap B)=\frac{12}{28}+\frac{15}{28}-\frac{8}{28}=\frac{19}{28}}$
+
+***Mutually Exclusive Events*** là các sự kiện không thể diễn ra đồng thời trong một phép thử hoặc trong một tình huống. Nói cách khác, nếu sự kiện A xảy ra thì sự kiện B sẽ không xảy ra và ngược lại. Thuật ngữ tiếng Việt là các biến cố loại trừ lẫn nhau.
+
+<div align="center">
+<img src="Pictures\MutuallyExclusiveEventsAddition.png" alt="Mutually Exclusive Events" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
+
+<div align="center">
+<img src="Pictures\MutuallyExclusiveEventsAddition2.png" alt="Mutually Exclusive Events for all pairs" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
+
+VD: Cho X ký hiệu độ pH của một mẫu thử. Biến cố X lớn hơn 6.5 nhưng nhỏ hơn hoặc bằng 7.8. Xác suất này là tổng của tất cả các bộ biến cố loại trừ lẫn nhau với phép hợp bằng giới hạn tương tự cho X.
+
+<div align="center">
+<img src="Pictures\Example2-3.png" alt="Mutually Exclusive Events for all pairs" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
+
+Khoảng cách của các biến cố càng nhỏ thì kết quả càng tốt.
+
+<div align="center">
+<img src="Pictures\AdditionRules.png" alt="Mutually Exclusive Events for all pairs" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
 
 2.4 Condition Probability
-- ${P(B|A) = P(A\cap B) / P(A)}$
-- ${P(A\cap B) = P(B|A) \times P(A)}$
+
+> ${P(B|A) = \frac{P(A\cap B)}{P(A)}}$  
+> ${P(A\cap B) = P(B|A) \times P(A)}$
+
+<div align="center">
+<img src="Pictures\ConditionalProbabilityFormula.png" alt="Mutually Exclusive Events for all pairs" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
+
+VD: Trong một lớp học, 35% sinh viên nghiên cứu khoa học và lịch sử. 65% nghiên cứu khoa học. Tính xác suất của sinh viên nghiên cứu lịch sử *sau khi đã nghiên cứu khoa học*?
+
+>- Sinh viên nghiên cứu khoa học là S
+>- Sinh viên nghiên cứu lịch sử là H  
+>${P(S\cup H)=0.35}$  
+>${P(S)=0.65}$  
+>${=> P(H|S)=\frac{P(H\cap S)}{P(S)}=\frac{0.35}{0.65}=0.53}$
+
+<div align="center">
+<img src="Pictures\MultiplicationRule.png" alt="Mutually Exclusive Events for all pairs" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
+
+VD: Một sọt chứa 12 banh hồng và 6 banh xanh. Không hoàn lại, 2 trái được lấy ra lần lượt từng quả. Xác suất để cả 2 quả banh được rút ra cùng là màu hồng?
 
