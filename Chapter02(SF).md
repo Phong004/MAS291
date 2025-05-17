@@ -49,9 +49,9 @@ VD: Một thí nghiệm ngẫu nhiên có kết quả trong một trong các đ�
 
 VD: Một lớp có 28 sinh viên, 12 học tiếng Nhật, 15 học tiếng Anh và 8 sinh viên học cả hai môn. Một sinh viên được chọn ngẫu nhiên, tính xác suất để chọn ra những sinh viên học tiếng Nhật hoặc tiếng Anh.
 
-- Gọi A là tập các sinh viên học tiếng Nhật có 12 phần tử.
-- Gọi B là tập các sinh viên học tiếng Anh có 15 phần tử.
-- Xác suất chọn ra sinh viên học tiếng Nhật hoặc tiếng Anh: ${P(A\cup B)=P(A)+P(B)-P(A\cap B)=\frac{12}{28}+\frac{15}{28}-\frac{8}{28}=\frac{19}{28}}$
+>- Gọi A là tập các sinh viên học tiếng Nhật có 12 phần tử.
+>- Gọi B là tập các sinh viên học tiếng Anh có 15 phần tử.
+>- Xác suất chọn ra sinh viên học tiếng Nhật hoặc tiếng Anh: ${P(A\cup B)=P(A)+P(B)-P(A\cap B)=\frac{12}{28}+\frac{15}{28}-\frac{8}{28}=\frac{19}{28}}$
 
 ***Mutually Exclusive Events*** là các sự kiện không thể diễn ra đồng thời trong một phép thử hoặc trong một tình huống. Nói cách khác, nếu sự kiện A xảy ra thì sự kiện B sẽ không xảy ra và ngược lại. Thuật ngữ tiếng Việt là các biến cố loại trừ lẫn nhau.
 
@@ -75,7 +75,10 @@ Khoảng cách của các biến cố càng nhỏ thì kết quả càng tốt.
 <img src="Pictures\AdditionRules.png" alt="Mutually Exclusive Events for all pairs" style="max-width: 80%; max-height: 500px; height: auto;">
 </div>
 
-2.4 Condition Probability
+## 4. Xác suất có điều kiện
+
+- Xác suất có điều kiện là xác suất của một sự kiện B xảy ra khi sự kiện A đã xảy ra (${A\neq B}$)
+- Tính xác suất sự kiện B xảy ra khi đã xảy ra sự kiện A chính là xác suất của ${B\cap A}$ với không gian mẫu giảm xuống còn bằng A (ký hiệu: P(B|A))
 
 > ${P(B|A) = \frac{P(A\cap B)}{P(A)}}$  
 > ${P(A\cap B) = P(B|A) \times P(A)}$
@@ -92,9 +95,36 @@ VD: Trong một lớp học, 35% sinh viên nghiên cứu khoa học và lịch 
 >${P(S)=0.65}$  
 >${=> P(H|S)=\frac{P(H\cap S)}{P(S)}=\frac{0.35}{0.65}=0.53}$
 
+## 5. Quy tắc nhân và tổng xác suất
+
+### Quy tắc nhân
+
 <div align="center">
 <img src="Pictures\MultiplicationRule.png" alt="Mutually Exclusive Events for all pairs" style="max-width: 80%; max-height: 500px; height: auto;">
 </div>
 
+**Giải thích công thức:**
+    ${P(A|B)=\frac{P(A\cap B)}{P(B)} => P(A\cap B)=P(A|B)\times P(B)}$  
+    ${P(B|A)=\frac{P(A\cap B)}{P(A)} => P(A\cap B=P(B|A)\times P(A))}$
+
 VD: Một sọt chứa 12 banh hồng và 6 banh xanh. Không hoàn lại, 2 trái được lấy ra lần lượt từng quả. Xác suất để cả 2 quả banh được rút ra cùng là màu hồng?
+
+>- A là xác suất rút ra quả banh màu hồng lần đầu tiên  
+>- B là xác suất rút ra quả banh màu hồng lần thứ hai  
+>${P(A)=\frac{12}{18}, P(B|A)=\frac{11}{17}}$  
+>${=>P(A\cap B)=P(A)\times P(B|A)=\frac{12}{18}\times \frac{11}{17}=\frac{132}{306}}$
+
+### Tổng xác suất (2 biến cố)
+
+- Cho không gian mẫu S có các không gian con: A, A', B, B giao với cả không gian A, và A'. Khi này, ${P(B)=P(B\cap A)+P(B\cap A')}$
+
+<div align="center">
+<img src="Pictures\TotalProbabilityRule.png" alt="Mutually Exclusive Events for all pairs" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
+
+### Tổng xác suất (đa biến cố)
+
+<div align="center">
+<img src="Pictures\TotalProbabilityRule2.png" alt="Mutually Exclusive Events for all pairs" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
 
