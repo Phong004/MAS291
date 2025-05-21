@@ -137,4 +137,54 @@ VD: Giả sử xác suất sản xuất các linh kiện bán dẫn có độ th
 ## 6. Sự độc lập
 
 **Một số các ví dụ về các biến cố độc lập:**
-- 
+
+- Tung một đồng xu và kết quả là mặt ngửa và tung một xúc xắc cho kết quả là 5.
+
+>P(C) là xác suất tung một đồng xu cho ra mặt ngửa = ${\frac{1}{2}}$  
+>P(H) là xác suất tung một xúc xắc cho kết quả là 5 = ${\frac{1}{6}}$  
+>${P(C\cup H)=\frac{1}{2}\times \frac{1}{6}=\frac{1}{2}}$  
+
+- Chọn một viên bị từ một hũ và tung một đồng xu cho kết quả là mặt ngửa.
+- Chọn một lá 3 từ một bộ bài, đặt nó trở lại, và sau đó chọn một lá át.
+
+>P(3) là xác suất chọn lá 3 từ bộ 52 lá = ${\frac{4}{52}=\frac{1}{13}}$  
+>P(A) là xác suất chọn được lá át từ bộ 52 lá = ${\frac{4}{52}=\frac{1}{13}}$  
+>${P(3\cup A)=\frac{1}{13}\times\frac{1}{13}=\frac{1}{169}}$  
+
+- Tung một xúc xắc cho kết quả là 4, và sau đó tung ra kết quả 1.
+
+<div align="center">
+<img src="Pictures\Independent.png" alt="Mutually Exclusive Events for all pairs" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
+
+Hai biến cố được gọi là độc lập khi một trong các mệnh đề tương đương sau thỏa mãn:
+    (1) ${P(A|B)=P(A)}$
+    (2) ${P(B|A)=P(B)}$
+    (3) ${P(A\cap B)=P(A)\times P(B)}$
+
+<div align="center">
+<img src="Pictures\MultiIndependent.png" alt="Mutually Exclusive Events for all pairs" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
+
+VD: Nếu một xúc xắc được ném 2 lần, tính xác suất xuất hiện 2 lần 5.  
+>${P(A)=\frac{1}{6}}$  
+>${P(B)=\frac{1}{6}}$  
+>${P(A\cap B)=P(A)\times P(B)=\frac{1}{6}\times\frac{1}{6}=\frac{1}{36}}$  
+
+## 7. Học thuyết Bayes
+
+- Học thuyết Bayes là một định lý cơ bản trong xác suất thống kê, cho phép ta cập nhật xác suất của một giả thuyết khi có thêm thông tin mới.
+- Cho hai sự kiện H (giả thuyết/điều kiện) và E(bằng chứng) với ${P(E)\gt 0}$, thì:  
+  >${P(H|E)=\frac{P(E|H)\times P(H)}{P(E)}}$  
+
+VD: Trong một khu phố, 90% trẻ em mắc bệnh cúm và 10% mắc bệnh sởi và không có bệnh khác. Xác suất bị phát ban do sởi là 0.95, do cúm là 0.08. Giả sử một đứa trẻ xuất hiện phát ban, tìm xác suất để đứa trẻ đó bị cúm.'
+
+>Gọi F: những đứa trẻ bị cúm  
+>M: những đứa trẻ bị sởi  
+>R: những đứa trẻ có triệu chứng phát ban  
+>${P(F|R)=\frac{P(R|F)\times P(F)}{P(R|M)\times P(M)+P(R|F)\times P(F)}=\frac{0.08\times 0.9}{0.95\times 0.1+0.08\times 0.9}\approx 0.43}$
+>${=>P(F|R)=0.43}$
+
+<div align="center">
+<img src="Pictures\BayesTheoremK.png" alt="Mutually Exclusive Events for all pairs" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
