@@ -68,9 +68,15 @@ VD3: Có một khả năng một bit được truyền qua một kênh truyền 
 
 - Là tính xác suất xảy ra đến r lần thử thành công xảy ra
 
->${f(x)=P(X=x)=C^{r-1}_{n-1}\times (1-p)^(x-r)\times(1-p)^{n-x}, x\gt 0}$  
->${u=E(X)=n\times p}$  
->${\sigma^2=V(X)=n\times p\times (1-p)}$ 
+>${f(x)=P(X=x)=C^{r-1}_{x-1}\times (1-p)^(x-r)\times p^{r}, x\gt r}$  
+>${u=E(X)=n\times\frac{r}{p}}$  
+>${\sigma^2=V(X)=r\time\frac{1-p}{p^2}}$  
+
+***Tổng hợp 3 phân phối***
+
+<div align="center">
+<img src="Pictures\ThreeFormula.png" alt="Probability Union Addition" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
 
 ### 3. Phân phối siêu bội
 
