@@ -5,11 +5,11 @@
 - Một biến rời rạc ngẫu nhiên là một biến ngẫu nhiên có tập xác định có hạn (hoặc vô hạn đếm được).
 
 VD1: Tung 1 xung xắc 2 lần, số lần xuất hiện mặt 5:  
->${\Omega={55,5N,N5,NN}}$  
+>${\Omega=\\{55,5N,N5,NN\\}}$  
 >X(5s)={0,1,2}
 
 VD2: Tung 1 đồng xu 3 lần, số lần xuất hiện mặt ngửa?
->${\Omega={HHH,HHT,HTH,HTT,THH,THT,TTH,TTT}}$  
+>${\Omega=\\{HHH,HHT,HTH,HTT,THH,THT,TTH,TTT\\}}$  
 >X(heads)={3,2,1,0}
 
 ## II. Phân phối xác suất và hàm khối xác suất
@@ -30,6 +30,6 @@ VD2: Tung 1 đồng xu 3 lần, số lần xuất hiện mặt ngửa?
 >(2) ${f(x_i)\ge 0}$  
 >(3) ${\sum_{i=1}^{n}f(x_i)=1}$
 
-div align="center">
+<div align="center">
 <img src="Pictures\PMFExample.png" alt="Probability Union Addition" style="max-width: 80%; max-height: 500px; height: auto;">
 </div>
