@@ -16,7 +16,7 @@ VD2: Tung 1 đồng xu 3 lần, số lần xuất hiện mặt ngửa?
 
 ***Phân phối xác suất***
 
-- Một phân phối xác suất của một biến ngẫu nhiên X là một xác suất liên quan với các giá trị khả năng của X.
+- Một phân phối xác suất của một biến ngẫu nhiên X là một xác suất liên quan với các giá trị khả dĩ của X.
 
 <div align="center">
 <img src="Pictures\PDExample.png" alt="Probability Union Addition" style="max-width: 80%; max-height: 500px; height: auto;">
@@ -24,7 +24,7 @@ VD2: Tung 1 đồng xu 3 lần, số lần xuất hiện mặt ngửa?
 
 ***Hàm khối xác suất***
 
-- Cho một biến ngẫu nhiên rời rạc X với các khả trị ${x_1, x_2, ..., x_n}$, một hàm khối xác suất là một hàm:
+- Cho một biến ngẫu nhiên rời rạc X với các giá trị khả dĩ ${x_1, x_2, ..., x_n}$, một hàm khối xác suất là một hàm:
 
 >(1) ${f(x_1)=P(X=x_i)}$  
 >(2) ${f(x_i)\ge 0}$  
@@ -33,3 +33,14 @@ VD2: Tung 1 đồng xu 3 lần, số lần xuất hiện mặt ngửa?
 <div align="center">
 <img src="Pictures\PMFExample.png" alt="Probability Union Addition" style="max-width: 80%; max-height: 500px; height: auto;">
 </div>
+
+VD3: Có một khả năng một bit được truyền qua một kênh truyền dẫn số bị lỗi. Cho X bằng số bit bị lỗi trong 4 bit được truyền. Các giá trị khả dĩ của X là {0, 1, 2, 3, 4}. Giả sử rằng xác suất là:  
+    ${P(X=0)=0.6561}$   ${P(X=1)=0.2916}$  
+    ${P(X=2)=0.0486}$   ${P(X=3)=0.0036}$
+    ${P(X=4)=0.0001}$
+
+<div align="center">
+<img src="Pictures\PMFNextExp.png" alt="Probability Union Addition" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
+
+## III. Hàm 
