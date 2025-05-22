@@ -77,3 +77,11 @@ VD3: Có một khả năng một bit được truyền qua một kênh truyền 
 <div align="center">
 <img src="Pictures\HyperDistribution.png" alt="Probability Union Addition" style="max-width: 80%; max-height: 500px; height: auto;">
 </div>
+
+### 4. Phân phối poisson
+
+- Sự việc lặp đi lặp lại trong 1 khoảng thời gian nhất định
+
+<div align="center">
+<img src="Pictures\Poisson.png" alt="Probability Union Addition" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
