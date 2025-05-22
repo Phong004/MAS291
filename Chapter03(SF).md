@@ -48,5 +48,32 @@ VD3: Có một khả năng một bit được truyền qua một kênh truyền 
 
 ## VI. Phân phối nhị thức
 
-- Một phép thử có n lần thử Bernoulli sao cho:
--  
+- TÍnh xác suất x lần xảy ra trong n phép thử:
+    n: số phép thử
+    s: số lần thành công
+    p: xác suất thành công.\
+
+## VII. Phân phố hình học và phân phối nhị thức âm
+
+### 1. Phân phối hình học
+
+- Là tính xác suất đến số lần thử đến lần thành công đầu tiên
+
+>${f(x)=P(X=x)=(1-p)^{x-1}\times p, x\gt 1}$  
+>${u=E(X)=\frac{1}{p}}$  
+>${\sigma^2=V(X)=\frac{1-p}{p^2}}$
+
+
+### 2. Phân phối nhị thức âm
+
+- Là tính xác suất xảy ra đến r lần thử thành công xảy ra
+
+>${f(x)=P(X=x)=C^{r-1}_{n-1}\times (1-p)^(x-r)\times(1-p)^{n-x}, x\gt 0}$  
+>${u=E(X)=n\times p}$  
+>${\sigma^2=V(X)=n\times p\times (1-p)}$ 
+
+### 3. Phân phối siêu bội
+
+<div align="center">
+<img src="Pictures\HyperDistribution.png" alt="Probability Union Addition" style="max-width: 80%; max-height: 500px; height: auto;">
+</div>
