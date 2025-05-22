@@ -44,3 +44,9 @@ VD3: Có một khả năng một bit được truyền qua một kênh truyền 
 </div>
 
 ## III. Hàm 
+
+
+## VI. Phân phối nhị thức
+
+- Một phép thử có n lần thử Bernoulli sao cho:
+-  
